@@ -6,7 +6,6 @@ import Home from "./pages/HomePage";
 function App() {
   return (
     <div className="App">
-      <p>felidae</p>
       <Router>
         <div className='App'>
           <Navbar />
@@ -19,6 +18,7 @@ function App() {
           </div>
         </div>
       </Router>
+  
     </div>
   );
 }

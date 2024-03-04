@@ -1,6 +1,8 @@
+import HeroSection from "../components/HeroSection"
+
 function Home() {
   return (
-    <div>home</div>
+    <HeroSection />
   )
 }
 
