@@ -1,5 +1,5 @@
 .hero-container {
-  background-image: url('/images/pfhero.png');
+  position: relative;
   background-size: cover; 
   background-position: center; 
   height: 100vh; 
@@ -8,4 +8,19 @@
   justify-content: center; 
   text-align: center; 
   color: white; 
+}
+
+.hero-container::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the pseudo-element */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire container */
+  height: 100vh; 
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+
+}
+
+.hero-content {
+  z-index: 0;
 }
